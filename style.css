@@ -42,7 +42,7 @@ header h1{
 
 header .line{
     height: 5px;
-    width: 60vh;
+    width: 60vw;
     background-color: var(--white);
     margin: 1vh auto;
     display: flex;

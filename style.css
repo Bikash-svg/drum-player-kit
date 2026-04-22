@@ -23,12 +23,31 @@ html, body{
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--white);
+    font-family: var(--font-display);
 }
 
 body{
     background-color: var(--black);
+}
+
+header h1{
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+header .line{
+    height: 5px;
+    width: 60vh;
+    background-color: var(--white);
+    margin: 1vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .drumKit-area{
@@ -53,4 +72,16 @@ body{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.drum-btn:active{
+    transform: scale(0.9);
+    background-color: var(--gray);
+    border: 10px solid var(--green);
+}
+
+.drum-transition{
+    transform: scale(0.9);
+    background-color: var(--gray);
+    border: 15px solid var(--green);
 }
